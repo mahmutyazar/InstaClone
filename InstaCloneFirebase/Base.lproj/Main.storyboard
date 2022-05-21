@@ -94,14 +94,62 @@
                     <view key="view" contentMode="scaleToFill" id="Awq-0Z-5dT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SelectImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="95h-Cx-1Rt">
+                                <rect key="frame" x="87" y="127" width="240" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="BHA-r9-SXd"/>
+                                    <constraint firstAttribute="width" constant="240" id="QTq-sD-h0s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAn-uz-8OO">
+                                <rect key="frame" x="163" y="558" width="88" height="42"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Upload">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="B1u-YT-ATu" eventType="touchUpInside" id="olS-HA-jj0"/>
+                                    <action selector="uploadClicked:" destination="B1u-YT-ATu" eventType="touchUpInside" id="xHO-n0-gYR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8yd-ZK-X3l">
+                                <rect key="frame" x="20" y="477" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="mrr-xd-i4a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qds-hO-9E8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8yd-ZK-X3l" firstAttribute="top" secondItem="95h-Cx-1Rt" secondAttribute="bottom" constant="70" id="0cg-5l-2WD"/>
+                            <constraint firstItem="8yd-ZK-X3l" firstAttribute="leading" secondItem="Awq-0Z-5dT" secondAttribute="leadingMargin" id="C7U-5O-gDI"/>
+                            <constraint firstItem="qds-hO-9E8" firstAttribute="bottom" secondItem="HAn-uz-8OO" secondAttribute="bottom" constant="213" id="UDK-zs-jSE"/>
+                            <constraint firstItem="8yd-ZK-X3l" firstAttribute="trailing" secondItem="Awq-0Z-5dT" secondAttribute="trailingMargin" id="dQ3-qi-PVw"/>
+                            <constraint firstItem="8yd-ZK-X3l" firstAttribute="centerX" secondItem="HAn-uz-8OO" secondAttribute="centerX" id="fb3-Nj-ivX"/>
+                            <constraint firstItem="95h-Cx-1Rt" firstAttribute="top" secondItem="qds-hO-9E8" secondAttribute="top" constant="83" id="iXi-sZ-xan"/>
+                            <constraint firstItem="95h-Cx-1Rt" firstAttribute="centerX" secondItem="8yd-ZK-X3l" secondAttribute="centerX" id="jiy-wq-kRb"/>
+                            <constraint firstItem="HAn-uz-8OO" firstAttribute="top" secondItem="8yd-ZK-X3l" secondAttribute="bottom" constant="47" id="qJa-Tb-cSM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="UgC-c5-8ec"/>
+                    <connections>
+                        <outlet property="commentText" destination="8yd-ZK-X3l" id="xv8-Wv-LWD"/>
+                        <outlet property="imageView" destination="95h-Cx-1Rt" id="DYp-N0-p6L"/>
+                        <outlet property="uploadButtonClicked" destination="HAn-uz-8OO" id="jTu-ig-99v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9G-Wr-x1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="388"/>
+            <point key="canvasLocation" x="1779.7101449275365" y="387.72321428571428"/>
         </scene>
         <!--Settings-->
         <scene sceneID="sku-9J-ixY">
@@ -176,6 +224,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SelectImage.png" width="240" height="280"/>
         <image name="f.circle.fill" catalog="system" width="128" height="121"/>
         <image name="s.circle.fill" catalog="system" width="128" height="121"/>
         <image name="u.circle.fill" catalog="system" width="128" height="121"/>

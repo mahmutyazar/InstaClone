@@ -10,6 +10,7 @@
 		2A43BA1828362D4600301327 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A43BA1728362D4600301327 /* FeedViewController.swift */; };
 		2A43BA1A28362D5900301327 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A43BA1928362D5900301327 /* UploadViewController.swift */; };
 		2A43BA1C28362D6A00301327 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A43BA1B28362D6A00301327 /* SettingsViewController.swift */; };
+		2ADB46DF283911160075B749 /* SelectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ADB46DE283911160075B749 /* SelectImage.png */; };
 		2AEC99C128358B3B008E271D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC99C028358B3B008E271D /* AppDelegate.swift */; };
 		2AEC99C328358B3B008E271D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC99C228358B3B008E271D /* SceneDelegate.swift */; };
 		2AEC99C528358B3B008E271D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC99C428358B3B008E271D /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		2A43BA1728362D4600301327 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2A43BA1928362D5900301327 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2A43BA1B28362D6A00301327 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2ADB46DE283911160075B749 /* SelectImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectImage.png; sourceTree = "<group>"; };
 		2AEC99BD28358B3B008E271D /* InstaCloneFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEC99C028358B3B008E271D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AEC99C228358B3B008E271D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				2A43BA1B28362D6A00301327 /* SettingsViewController.swift */,
 				2AEC99C628358B3B008E271D /* Main.storyboard */,
 				2AEC99C928358B3D008E271D /* Assets.xcassets */,
+				2ADB46DE283911160075B749 /* SelectImage.png */,
 				2AEC99CB28358B3D008E271D /* LaunchScreen.storyboard */,
 				2AEC99CE28358B3D008E271D /* Info.plist */,
 				2AEC99D428358BD7008E271D /* GoogleService-Info.plist */,
@@ -165,6 +168,7 @@
 			files = (
 				2AEC99CD28358B3D008E271D /* LaunchScreen.storyboard in Resources */,
 				2AEC99D528358BD7008E271D /* GoogleService-Info.plist in Resources */,
+				2ADB46DF283911160075B749 /* SelectImage.png in Resources */,
 				2AEC99CA28358B3D008E271D /* Assets.xcassets in Resources */,
 				2AEC99C828358B3B008E271D /* Main.storyboard in Resources */,
 			);
