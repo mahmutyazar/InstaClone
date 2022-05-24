@@ -16,13 +16,13 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func logoutClicked(_ sender: Any) {
+    @IBAction func logoutClicked(_ sender: UIButton) {
         
         do {
             try Auth.auth().signOut()
             self.performSegue(withIdentifier: "toViewController", sender: nil)
         } catch {
-            print("error")
+            print("ERROR!")
         }
 
     }
