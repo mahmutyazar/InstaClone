@@ -37,7 +37,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
-        picker.allowsEditing = true
+        picker.allowsEditing = false
         present(picker, animated: true, completion: nil)
         
     }
